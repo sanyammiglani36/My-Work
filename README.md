@@ -1,2 +1,2 @@
 # My-Work
-Worker Name = Sanyam Miglani
+Name = Sanyam Miglani

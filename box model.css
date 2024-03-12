@@ -1,0 +1,63 @@
+/* Box Model and Units */
+
+/* 1 - Width[It sets the width of a element] and height[It sets the height of a element]
+2 - Border [border width,Border style,Border-colour]
+i) Border-width = controls the thickness of a border
+ii) Border-color = comtrols the colour of a border
+iii) Border-style = comtrols the line style -dashed,solid etc.
+iv) Border-radius = It is used to set the redius of a box
+3 - padding = It is the property which sets the pading area on all four sides of an element[padding right,padding left,padding right]
+4 - Margin[It is the property on spacing outside of the element].It creates the extra space around the element
+5 - Border radius
+6 - Display Property
+7 - box-sizing = IT only has two values i) content-box[The width we assign it assign to the conternt] ii)border-box[if we assign width the width will be set according to content+padding+border
+
+Units - Percentage,EMS and REMS */
+
+div{
+    width: 200px;
+    height: 200px;
+}
+h1{
+    width: 100px;
+    background-color: pink;
+    padding-left: 10px;
+    padding-right: 24px;
+}
+
+#one{
+    background-color: brown;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    box-sizing: border-box;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    
+}
+
+span{
+    margin-top: 200px;
+}
+#two{
+    background-color: blueviolet;
+    border-width: 3px;
+    border-color: blue;
+    border-style: dashed;
+    box-sizing: border-box;
+    border-left-width: 8px;
+    border-left-color: maroon;
+}
+#three{
+    background-color: blue;
+    border: 4px solid magenta;
+    box-sizing: border-box;
+    border-radius: 25px;;
+}
+button{
+    padding: 0 20px;
+    
+    
+}

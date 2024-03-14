@@ -1,0 +1,83 @@
+/* Element Selector
+Class Selector (.)
+Id Selector(#)
+Descendent Selector(It selects all the <a/> inside the li 
+Adjacent Selector(It select only the paragraphs that are immediately proceddded by h1 also[Combinator]
+Direct Descendent Selector(It onlt selects the li that are direct children of div element(Syntax footer >a)
+Attribute Selector(This selector selects the all the input elements where the type attriubute is set to "text")
+pseudo Elements(It is a keyword added to a selector that lets you style a specific part of the selected element)[::after,::before,::first-letter,]
+Seletion pesudo element appplies style to part of a document that has been highlighted by the user[::Selection]
+Pseudo class[:Hover pseudo class- in this when the user interacts with an eleement with a pointing device]
+[:Active, This Selector is used to change the colour to another]
+
+
+
+Adjacent Selector */
+
+
+
+
+ button{
+    color: #264653;
+    font-size: 20px;
+    background-color: white;
+}
+h1,h2{
+  color: black;  
+}
+body{
+    color:  #003049;
+    
+}
+#Login{
+    background-color: maroon;
+    color: #fefae0;
+}
+span{
+    color: green;
+}
+.tag{
+    background-color: red;
+    font-size: 16px;
+}
+.post a{
+    color: #003049;
+}
+input[type="password"]{
+    color: aqua;
+}
+.section button:hover{
+    color: white;
+    background-color: red;
+    font-size: 10px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+button:active{
+    color: magenta;
+}
+.post{
+    background-color: aqua;
+}
+h2::first-letter{
+    font-size: 50px;
+}
+p::first-line{
+    color: purple;
+}
+p::selection{
+    background-color: orange;
+}
+h1,h2{
+    color: orange;
+}
+placeholder:hover{
+    color: orange;
+}
+button:hover{
+    size: 10px; 
+}

@@ -1,0 +1,48 @@
+/* span{
+    background-color: blanchedalmond;
+    border: 1px solid black;
+    margin: 50px;
+    padding: 50px;
+    
+}
+h1{
+    background-color: paleturquoise;
+    border: 1px solid black;
+    width: 300px;
+    margin: 50px;
+    padding: 50px;
+} */
+
+.div1{
+    background-color: lime;
+    height: 50px;
+    width: 150px;
+    color: red;
+    display: inline-block;
+}
+
+.div2{
+    background-color: cyan;
+    height: 50px;
+    width: 150px;
+    color: orange;
+    display: inline-block;
+}
+
+.div3{
+    background-color: magenta;
+    height: 50px;
+    width: 150px;
+    color: yellow;
+    display: inline-block;
+}
+.menu{
+    width: 1000px;
+    margin: 0 auto;
+    background-color: aqua;
+}
+.menu ul li{
+    display: inline-block;
+    font-size: 24px;
+    padding: 10px
+}

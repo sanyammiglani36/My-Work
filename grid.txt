@@ -1,0 +1,14 @@
+Boot-strap also comes with a grid system,whuch helps us to constuct our own custom,responsive layouts
+It only works in a container
+
+for responsive image we use "img-fluid"
+
+useful-Grid Alignment
+we use=1)align-items-start
+2)align-items-center
+3)align-items-end
+
+Boot-strap and Forms
+Forms are used to making form here we use class= form-control
+
+form-group is the aesiest way to add some structures to forms.

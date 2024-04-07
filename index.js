@@ -1,56 +1,51 @@
-//async function
+// let promise = new promise(function(resolve,reject){
+//     console.log("I am inside a promise");
+//     resolve(1998);
+// })
 
-// async function abcd(){
-//     return 7;
-// }
-// abcd();
+// console.log("First");
 
+// let meraPromise = new Promise(function(resolve,reject){
+//     setTimeout(function(){
+//         console.log("I am inside a promise1")
+//     },5000);
+//     //resolve(1998);
+// });
 
-//async function
-// async function utility(){
+// let promise = new Promise(function(resolve,reject){
+//     setTimeout(function(){
+//         console.log("I am inside the promise2")
+//     },3000);
+//     //reject(new Error("Error is occuring inside"));
+// })
+// console.log("First");
 
+// let promise = new Promise(function(resolve,reject){
+//     setTimeout(function(){
+//         console.log("I am isnide a promise");
+//     },2000);
+//     resolve(2233);
+// });
 
-
-//     let haryanaMausam = new Promise((resolve,reject) => {
-//         setTimeout(() => {
-//             resolve("Haryana me garmi hai");
-//         },10000);
-//     });
-
-//     let delhiMausam = new Promise((resolve,reject) => {
-//         setTimeout(() => {
-//             resolve("Delhi me bhot hi jyada garmi hai");
-//         },20000);
-//     });
-
-//     let hM = haryanaMausam;
-//     let dM = delhiMausam;
-
-//     return [hM,dM];
-
-// }
-
-//await function
-
-// async function utility(){
+// promise.then((value) => {console.log(value)});
 
 
+//multiple promises
+let firstPromise = new Promise(function(resolve,reject){
+    setTimeout(() => {
+        console.log("setTimeout1 started");
+    },2000);
+    resolve(true);
+});
 
-//     let haryanaMausam = new Promise((resolve,reject) => {
-//         setTimeout(() => {
-//             resolve("Haryana me garmi hai");
-//         },10000);
-//     });
+let output = firstPromise.then(() => {
+    let secondPromise = new Promise(function(resolve,reject){
+        setTimeout(() => {
+            console.log("SetTimeout2 started");
+        });
+        resolve("secondPromise is resolved");
+    });
+    return secondPromise;
+});
 
-//     let delhiMausam = new Promise((resolve,reject) => {
-//         setTimeout(() => {
-//             resolve("Delhi me bhot hi jyada garmi hai");
-//         },20000);
-//     });
-
-//     let hM = await haryanaMausam;
-//     let dM = delhiMausam;
-
-//     return [hM,dM];
-
-// }
+output.then((value) => console.log(value));
